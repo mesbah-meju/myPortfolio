@@ -44,10 +44,7 @@ export const Navigation = () => {
           )}
         >
           <Link to="/" className="flex items-center gap-2 group" aria-label="Home">
-            <span className="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-primary-glow text-primary-foreground font-bold text-sm shadow-[0_0_20px_hsl(var(--primary)/0.5)] group-hover:scale-105 transition-transform">
-              MU
-            </span>
-            <span className="hidden sm:block font-semibold tracking-tight">
+            <span className="font-semibold tracking-tight text-sm sm:text-base">
               Mesbah <span className="text-muted-foreground font-normal">Uddin</span>
             </span>
           </Link>

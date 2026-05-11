@@ -8,7 +8,7 @@ export const SkillsOverview = () => (
       aria-hidden
     />
     <div className="container-tight relative">
-      <Reveal className="text-center max-w-2xl mx-auto mb-16">
+      <Reveal className="text-center mx-auto mb-16">
         <p className="text-xs font-medium tracking-[0.25em] text-primary-glow uppercase mb-4">
           Skills
         </p>

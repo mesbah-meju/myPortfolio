@@ -13,8 +13,8 @@ const Index = () => (
     <AboutPreview />
     <SkillsOverview />
     <ExperienceTimeline />
-    <FeaturedProjects />
     <Achievements />
+    <FeaturedProjects />
     <ContactCTA />
   </PageTransition>
 );

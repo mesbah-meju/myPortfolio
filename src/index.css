@@ -43,8 +43,8 @@
 
     --gradient-primary: linear-gradient(135deg, hsl(162 75% 22%), hsl(158 80% 55%));
     --gradient-hero: radial-gradient(ellipse at 50% 0%, hsl(158 70% 25% / 0.45), transparent 60%),
-                     radial-gradient(ellipse at 0% 80%, hsl(162 75% 18% / 0.35), transparent 55%),
-                     radial-gradient(ellipse at 100% 80%, hsl(158 80% 30% / 0.28), transparent 55%);
+      radial-gradient(ellipse at 0% 80%, hsl(162 75% 18% / 0.35), transparent 55%),
+      radial-gradient(ellipse at 100% 80%, hsl(158 80% 30% / 0.28), transparent 55%);
     --gradient-text: linear-gradient(135deg, hsl(150 20% 98%), hsl(158 80% 70%));
 
     --shadow-glow: 0 0 80px hsl(158 70% 38% / 0.35);
@@ -56,9 +56,13 @@
 }
 
 @layer base {
-  * { @apply border-border; }
+  * {
+    @apply border-border;
+  }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     @apply bg-background text-foreground antialiased;
@@ -69,7 +73,9 @@
     background-attachment: fixed;
   }
 
-  ::selection { @apply bg-primary/30 text-foreground; }
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
 }
 
 @layer utilities {
@@ -86,16 +92,17 @@
 
   .glass-card-hover {
     transition: transform 0.5s var(--transition-smooth),
-                border-color 0.4s ease,
-                box-shadow 0.5s ease,
-                background 0.4s ease;
+      border-color 0.4s ease,
+      box-shadow 0.5s ease,
+      background 0.4s ease;
   }
+
   .glass-card-hover:hover {
     transform: translateY(-6px);
     background: hsl(var(--glass-bg) / 0.75);
     border-color: hsl(var(--primary) / 0.5);
     box-shadow: 0 24px 60px -20px hsl(var(--primary) / 0.35),
-                0 0 0 1px hsl(var(--primary) / 0.15) inset;
+      0 0 0 1px hsl(var(--primary) / 0.15) inset;
   }
 
   .text-gradient {
@@ -112,11 +119,17 @@
     color: transparent;
   }
 
-  .glow-effect { box-shadow: var(--shadow-glow); }
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
 
-  .section-padding { @apply py-24 md:py-36; }
+  .section-padding {
+    @apply py-24;
+  }
 
-  .container-tight { @apply container max-w-6xl mx-auto px-6; }
+  .container-tight {
+    @apply container max-w-6xl mx-auto px-6;
+  }
 
   .grid-bg {
     background-image:
@@ -146,7 +159,11 @@
     animation: blink 1s steps(2) infinite;
   }
 
-  @keyframes blink { 50% { opacity: 0; } }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
   .scroll-indicator {
     width: 26px;
@@ -155,6 +172,7 @@
     border-radius: 14px;
     position: relative;
   }
+
   .scroll-indicator::after {
     content: '';
     position: absolute;
@@ -167,10 +185,25 @@
     border-radius: 2px;
     animation: scroll-dot 1.6s ease-in-out infinite;
   }
+
   @keyframes scroll-dot {
-    0% { opacity: 0; transform: translate(-50%, 0); }
-    40% { opacity: 1; }
-    80% { opacity: 0; transform: translate(-50%, 14px); }
-    100% { opacity: 0; transform: translate(-50%, 14px); }
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0);
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 0;
+      transform: translate(-50%, 14px);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translate(-50%, 14px);
+    }
   }
 }

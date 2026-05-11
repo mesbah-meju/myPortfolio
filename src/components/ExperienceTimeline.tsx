@@ -6,7 +6,7 @@ import { experience } from "@/data/portfolio";
 export const ExperienceTimeline = () => (
   <section id="experience" className="section-padding relative">
     <div className="container-tight">
-      <Reveal className="max-w-2xl mb-16">
+      <Reveal className="text-center mb-16">
         <p className="text-xs font-medium tracking-[0.25em] text-primary-glow uppercase mb-4">
           Experience
         </p>
@@ -27,16 +27,18 @@ export const ExperienceTimeline = () => (
               key={item.role + item.company}
               direction={idx % 2 === 0 ? "left" : "right"}
             >
-              <div
-                className={`relative md:grid md:grid-cols-2 md:gap-12 ${
-                  idx % 2 === 0 ? "" : "md:[&>*:first-child]:col-start-2"
-                }`}
-              >
+              <div className="relative md:grid md:grid-cols-2 md:gap-12">
                 <div
                   aria-hidden
                   className="absolute left-4 md:left-1/2 top-3 -translate-x-1/2 w-3 h-3 rounded-full bg-primary-glow ring-4 ring-background shadow-[0_0_18px_hsl(var(--primary)/0.6)]"
                 />
-                <div className={`pl-12 md:pl-0 ${idx % 2 === 0 ? "md:pr-10 md:text-right" : "md:pl-10"}`}>
+                <div
+                  className={`pl-12 md:pl-0 ${
+                    idx % 2 === 0
+                      ? "md:col-start-1 md:pr-10"
+                      : "md:col-start-2 md:pl-10"
+                  }`}
+                >
                   <div className="glass-card glass-card-hover p-6 inline-block w-full text-left">
                     <div className="flex items-center gap-2 text-xs text-primary-glow font-medium mb-2">
                       <Briefcase className="w-3.5 h-3.5" />

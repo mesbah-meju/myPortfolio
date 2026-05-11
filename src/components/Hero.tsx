@@ -40,9 +40,9 @@ export const Hero = () => {
             Available for senior engineering roles
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tight leading-[1.05] mb-6">
-            <span className="block text-foreground">{personal.name}.</span>
-            <span className="block text-gradient-primary">
+          <h1 className="font-bold tracking-tight leading-[1.05] mb-6">
+            <span className="block text-foreground text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]">{personal.name}.</span>
+            <span className="block text-gradient-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl m-y4">
               <span ref={typeRef} className="caret" />
             </span>
           </h1>

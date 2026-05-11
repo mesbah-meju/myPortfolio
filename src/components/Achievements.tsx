@@ -8,7 +8,7 @@ export const Achievements = () => (
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-glow/15 rounded-full blur-3xl" />
 
-        <Reveal className="relative max-w-2xl mb-12">
+        <Reveal className="relative text-center mb-12">
           <p className="text-xs font-medium tracking-[0.25em] text-primary-glow uppercase mb-4">
             Impact
           </p>

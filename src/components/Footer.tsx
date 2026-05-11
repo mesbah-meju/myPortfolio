@@ -6,13 +6,9 @@ export const Footer = () => (
   <footer className="border-t border-border/60 mt-10">
     <div className="container-tight py-12 flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex items-center gap-3">
-        <span className="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-primary-glow text-primary-foreground font-bold text-sm">
-          MU
-        </span>
         <div className="text-sm">
-          <div className="font-semibold">{personal.name}</div>
-          <div className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} · Built with care.
+          <div className="text-muted-foreground text-xs ">
+            © {new Date().getFullYear()} {personal.name}. All rights reserved.
           </div>
         </div>
       </div>
