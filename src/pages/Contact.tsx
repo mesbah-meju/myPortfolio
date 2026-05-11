@@ -63,7 +63,6 @@ const Contact = () => {
               { icon: Mail, label: "Email", value: personal.email, href: `mailto:${personal.email}` },
               { icon: Phone, label: "Phone", value: personal.phone, href: `tel:${personal.phone.replace(/\s/g, "")}` },
               { icon: MapPin, label: "Location", value: personal.location },
-              { icon: Globe, label: "Website", value: personal.website.replace(/^https?:\/\//, ""), href: personal.website },
               { icon: Linkedin, label: "LinkedIn", value: "in/mesbah-uddin-meju", href: personal.linkedin },
               { icon: Github, label: "GitHub", value: "@mesbah-meju", href: personal.github },
             ].map((c) => {
@@ -88,8 +87,8 @@ const Contact = () => {
             })}
           </Reveal>
 
-          <Reveal direction="right" className="lg:col-span-3">
-            <form onSubmit={onSubmit} className="glass-card p-7 md:p-9 space-y-5">
+          <Reveal direction="right" className="glass-card lg:col-span-3">
+            <form onSubmit={onSubmit} className="p-7 md:p-9 space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
