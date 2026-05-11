@@ -1,3 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
 User-agent: Googlebot
 Allow: /
 
@@ -8,6 +13,10 @@ User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
+Allow: /
+
+Sitemap: https://mesbahuddin.info/sitemap.xml
+
 Allow: /
 
 User-agent: *

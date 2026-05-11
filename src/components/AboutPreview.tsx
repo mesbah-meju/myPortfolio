@@ -59,7 +59,7 @@ export const AboutPreview = () => (
           const Icon = item.icon;
           return (
             <StaggerItem key={item.title}>
-              <div className="glass-card glass-card-hover p-6 h-full group flex flex-col">
+              <div className="glass-card glass-card-hover p-6 h-full group flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary-glow mb-4 grid place-items-center text-primary-foreground group-hover:scale-110 transition-transform duration-500">
                   <Icon className="w-6 h-6" />
                 </div>
